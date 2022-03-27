@@ -1,0 +1,43 @@
+<h1>Languages:</h1>
+{{#if languages.length}}
+<div class="flex flex-wrap">
+  {{#each languages}}
+      <div class="s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{img}}">
+          </div>
+          <div class="card-content">
+            <span class="card-title">{{title}}</span>
+            <p class="price">{{price}}</p>
+          </div>
+          <div class="card-action p-0">
+            <div class="flex">
+              <a
+                href="/languages/{{id}}"
+                target="_blank"
+                class="card-link-padding"
+              >
+                Open
+              </a>
+              <a
+                href="/languages/{{id}}/edit?allow=true"
+                class="card-link-padding"
+              >
+                Edit
+              </a>
+            </div>
+            <div class="pl-6 pr-6 pb-4">
+              <form action="/cart/add" method="POST">
+                <input type="hidden" name="id" value={{id}}>
+                <button type="submit" class="btn btn-primary">Buy</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  {{/each}}
+</div>
+{{else}}
+<h3>Languages is empty!</h3>
+{{/if}}

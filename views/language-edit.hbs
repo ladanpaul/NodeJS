@@ -1,0 +1,23 @@
+<h1>Edit language {{ language.title }}</h1>
+<form action="/languages/edit" method="POST">
+  <div class="input-field">
+    <input id="title" name="title" type="text" class="validate" required value={{language.title}}>
+    <label for="title">Language name</label>
+    <span class="helper-text" data-error="Enter language name"></span>
+  </div>
+  <div class="input-field">
+    <input id="price" name="price" type="number" class="validate" required value={{language.price}} min="1">
+    <label for="price">Language price</label>
+    <span class="helper-text" data-error="Enter price"></span>
+  </div>
+  <div class="input-field">
+    <input id="img" name="img" type="text" class="validate" required value={{language.img}}>
+    <label for="img">URL image</label>
+    <span class="helper-text" data-error="Enter url image"></span>
+  </div>
+
+  <input type="hidden" name="id" value={{language.id}}>
+  <button class="btn btn-primary">
+    Edit language
+  </button>
+</form>

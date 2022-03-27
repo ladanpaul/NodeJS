@@ -1,0 +1,121 @@
+/* default classes */
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.border {
+  border-width: 1px;
+  border-style: border solid;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-d {
+  border: 1px solid blue;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.p-6 {
+  padding: 24px;
+}
+
+.pt-4 {
+  padding-top: 16px;
+}
+.pb-4 {
+  padding-bottom: 16px;
+}
+.pl-4 {
+  padding-left: 16px;
+}
+.pr-4 {
+  padding-right: 16px;
+}
+.pt-6 {
+  padding-top: 24px;
+}
+.pb-6 {
+  padding-bottom: 24px;
+}
+.pl-6 {
+  padding-left: 24px;
+}
+.pr-6 {
+  padding-right: 24px;
+}
+/* =============== */
+
+.card .card-action.p-0 {
+  padding: 0;
+}
+
+.card-link-padding {
+  padding: 16px 24px;
+}
+
+.nav-wrapper {
+  padding: 0 2rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.language h1 {
+  margin-bottom: 2rem;
+}
+
+.language img {
+  width: 200px;
+  max-width: 200;
+  object-fit: cover;
+  height: auto;
+}
+
+.language .price.big {
+  font-size: 2.5rem;
+}

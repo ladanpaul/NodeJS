@@ -1,0 +1,27 @@
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Test app</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+        <li class="active"><a href="/">Main page</a></li>
+        {{else}}
+        <li><a href="/">Main page</a></li>
+        {{/if}}
+        {{#if isLanguages}}
+        <li class="active"><a href="/languages">Languages</a></li>
+        {{else}}
+        <li><a href="/languages">Languages</a></li>
+        {{/if}}
+        {{#if isAdd}}
+        <li class="active"><a href="/add">Add language</a></li>
+        {{else}}
+        <li><a href="/add">Add language</a></li>
+        {{/if}}
+        {{#if isCart}}
+        <li class="active"><a href="/cart">Cart</a></li>
+        {{else}}
+        <li><a href="/cart">Cart</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
