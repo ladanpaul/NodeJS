@@ -11,6 +11,14 @@
   flex-direction: column;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
 .w-full {
   width: 100%;
 }
@@ -80,7 +88,35 @@
 .pr-6 {
   padding-right: 24px;
 }
+
+.ml-6 {
+  margin-left: 24px;
+}
+
+.w-250 {
+  width: 250px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
 /* =============== */
+
+.card-wrapper {
+  width: 350px;
+}
 
 .card .card-action.p-0 {
   padding: 0;
