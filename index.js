@@ -17,7 +17,7 @@ app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs"); // second params should be the same like previous engine name('hbs')
 app.set("views", "views"); // views is default ( second param )
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use("/", homeRoutes);
 app.use("/add", addRoutes);
